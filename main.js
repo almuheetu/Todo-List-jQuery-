@@ -11,3 +11,6 @@ $('ul').on('click', "span" , function(event) {
     });
     event.stopPropagation();
 });
+$('ul').on('click', 'li', function(){
+    $(this).toggleClass('done');
+});
